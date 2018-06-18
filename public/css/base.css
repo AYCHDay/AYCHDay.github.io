@@ -1,0 +1,30 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+#background{
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1,p{
+  text-align: center;
+  color: #fff;
+  font-family: Raleway;
+  width: 100%;
+  top: 229px;
+  left: 164px;
+  z-index:999;
+}
+h1{
+  font-size: 45px;
+  font-weight: 900;
+}
+p{
+  font-weight: 400;
+  font-size: 22px;
+}
