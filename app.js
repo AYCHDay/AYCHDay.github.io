@@ -41,7 +41,7 @@ rp(options)
 **********************************************************/
 const serverURL = "127.0.0.1";
 const port = 3000;
-// const images = ['Logo1.jpg', 'Logo2.jpg', 'Logo3.jpg', 'Logo4.jpg', 'Logo5.jpg'];
+const images = ['Logo1.jpg', 'Logo2.jpg', 'Logo3.jpg', 'Logo4.jpg', 'Logo5.jpg'];
 
 let server = http.createServer(function(req, res){
   fs.readFile("index.html", "UTF-8", function(err, text){
@@ -50,9 +50,9 @@ let server = http.createServer(function(req, res){
       res.write(text);
 
       //Get a random image
-      // let idx = Math.floor(Math.random() * images.length);
-      // res.write("<body id='background' style='background: url(./images/" + images[idx] + ")'>");
-      res.write("<body id='background' style='background: url(./images/Logo1.jpg)'>");
+      let idx = Math.floor(Math.random() * images.length);
+      res.write("<body id='background' style='background: url(./images/" + images[idx] + ")'>");
+      
       //Get Other Cotents of the page
       res.write("<h1>Word of the Day</h1>");
       res.write("<p>" + date + "</p><br>");
